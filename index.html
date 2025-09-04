@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Login</title>
+<style>
+  body {
+    background: linear-gradient(to bottom, #1e3c72, #2a5298);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .login-container {
+    background-color: #205081;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    width: 320px;
+    text-align: center;
+    color: white;
+  }
+  .profile-img {
+    width: 80px;
+    height: 80px;
+    background: #a1b5cc;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+  }
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  label {
+    font-size: 14px;
+    user-select: none;
+  }
+  .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin: 10px 0 20px 0;
+  }
+  .forgot {
+    color: #c5d4f0;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .forgot:hover {
+    color: #fff;
+  }
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0b1a45;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #0f267f;
+  }
+</style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="profile-img"></div>
+    <input type="text" placeholder="Username" />
+    <input type="password" placeholder="Password" />
+    <div class="options">
+      <label><input type="checkbox" /> Remember me</label>
+      <span class="forgot">Forgot password?</span>
+    </div>
+    <button>LOGIN</button>
+  </div>
+</body>
+</html>
